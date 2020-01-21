@@ -1,0 +1,10 @@
+version: '3.7'
+services:
+  parking-boot:
+    image: herianto/parking-boot:1.0
+    build:
+      context: ./
+      dockerfile: dockerfile
+    ports: 
+      - "9001:8282"
+    restart: always
